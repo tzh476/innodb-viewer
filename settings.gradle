@@ -1,0 +1,5 @@
+rootProject.name = 'innodb-viewer'
+
+include 'classpy-common'
+include 'classpy-gui'
+include 'classpy-ibd'

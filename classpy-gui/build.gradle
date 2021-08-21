@@ -1,0 +1,20 @@
+import org.gradle.internal.SystemProperties
+import org.gradle.util.VersionNumber
+
+
+def currentJvm = SystemProperties.getInstance().getJavaVersion()
+
+if (VersionNumber.parse(currentJvm) > VersionNumber.parse("1.8")) {
+
+    apply plugin: 'org.openjfx.javafxplugin'
+
+    javafx {
+        version = "11.0.2"
+        modules = [ 'javafx.controls' ]
+    }
+}
+
+dependencies {
+    compile project(':classpy-common')
+    compile project(':classpy-ibd')
+}

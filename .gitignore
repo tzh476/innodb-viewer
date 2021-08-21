@@ -1,0 +1,8 @@
+.gradle/
+.nb-gradle/
+.idea/
+build/
+out/
+*.sublime-workspace
+*.iml
+.DS_Store
